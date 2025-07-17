@@ -1,0 +1,208 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STYLIANOU CHRISTINA - PORTFOLIO</title>
+    <link rel="shortcut icon" href="images\logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="STYLIANOU CHRISTINA - PORTFOLIO">
+    <meta name="description" content="I am Christina - web developer with a passion for creating beautiful and respon responsive websites.">
+
+    <meta property="og:url" content="https://christinastyl.github.io/portfolio/"/>
+    <meta property="og:title" content="STYLIANOU CHRISTINA - PORTFOLIO"/>
+    <meta property="og:description" content="I am Christina - web developer with a passion for creating beautiful and respon responsive websites."/>
+    <meta property="og:site_name" content="STYLIANOU CHRISTINA - PORTFOLIO"/>
+    <meta property="og:image" content="https://christinastyl.github.io/portfolio/images/og_image.jpg"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link  href="style.css" rel="stylesheet"/>
+    <link  href="all.min.css" rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body onload="startTime()">
+    <div class="header-wrap" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="header-title"><span>WEB</span><span>DEVELOPER</span></div>
+                    <div class="header-text">I am Christina - <span>web developer</span> with a passion for creating beautiful and respon responsive websites.</div>
+                    <a class="button" href="#projects">VIEW MY WORK</a>
+                </div>
+                <div class="col-md-6 hidden-xs hidde-sm">
+                    <div class="header-img">
+                        <img src="images/header.png" alt="code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="personal-info" class="personal-wrap wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">PERSONAL INFO</div>
+                    <div class="section-line"><span></span></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab">
+                      <button class="tablinks active" onclick="openCity(event, 'about')">About</button>
+                      <button class="tablinks" onclick="openCity(event, 'educations')">Educations</button>
+                      <button class="tablinks" onclick="openCity(event, 'experience')">Experience</button>
+                    </div>
+
+                    <div id="about" class="tabcontent active">
+                      <h3>About</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div id="educations" class="tabcontent">
+                      <h3>Educations</h3>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    </div>
+
+                    <div id="experience" class="tabcontent">
+                      <h3>Experience</h3>
+                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="services-wrap wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">MY SERVICES</div>
+                    <div class="section-line"><span></span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="services-box">
+                        <div class="service-title">FRONT END DEVELOPMENT</div>
+                        <div class="service-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-push-4">
+                    <div class="services-box">
+                        <div class="service-title">BACK END DEVELOPMENT</div>
+                        <div class="service-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="services-box">
+                        <div class="service-title">WORDPRESS DEVELOPMENT</div>
+                        <div class="service-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skills-wrap wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">SKILLS</div>
+                    <div class="section-line"><span></span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="skills-text">The skills, tools and technologies I use:</div>
+                </div>
+                <div class="col-md-12">
+                    <div class="skills-images">
+                        <img class="skill-img" src="images/skills/html.png" alt="HTML">
+                        <img class="skill-img" src="images/skills/css.png" alt="CSS">
+                        <img class="skill-img" src="images/skills/bootstrap.png" alt="Bootstrap">
+                        <img class="skill-img" src="images/skills/js.png" alt="JS">
+                        <img class="skill-img" src="images/skills/jquery.png" alt="jQuery">
+                        <img class="skill-img" src="images/skills/php.png" alt="PHP">
+                        <img class="skill-img" src="images/skills/mysql.png" alt="MySQL">
+                        <img class="skill-img" src="images/skills/wordpress.png" alt="WordPress">
+                        <img class="skill-img" src="images/skills/seo.png" alt="SEO">
+                        <img class="skill-img" src="images/skills/ui.png" alt="UX and UI Design">
+                        <img class="skill-img" src="images/skills/responsive.png" alt="Responsive Design">
+                        <img class="skill-img" src="images/skills/api.png" alt="API">
+                        <img class="skill-img" src="images/skills/filezilla.png" alt="FileZilla">
+                        <img class="skill-img" src="images/skills/photoshop.png" alt="Photoshop">
+                        <img class="skill-img" src="images/skills/illustrator.png" alt="Illustrator">
+                        <img class="skill-img" src="images/skills/indesign.png" alt="InDesign">
+                        <img class="skill-img" src="images/skills/openshot.png" alt="OpenShot Video Editor">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="projects-wrap wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">PROJECTS</div>
+                    <div class="section-line"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="container">
+            <div class="bottom-wrap wrap">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-menu">
+                            <a class="menu-items" href="#personal-info">PERSONAL INFO</a>
+                            <a class="menu-items" href="#services">MY SERVICES</a>
+                            <a class="menu-items" href="#skills">SKILLS</a>
+                            <a class="menu-items" href="#projects">PROJECTS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="t-center" id="copyright">©2025 Christina Stylianou</p>
+            </div>
+        </div>
+    </div>
+    <a href="#top" id="scroll-top" class="scroller tp" title="BACK TO TOP" ><span></span></a>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
