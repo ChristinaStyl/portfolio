@@ -88,6 +88,36 @@ a.menu-items:hover{background-image: linear-gradient(to right, var(--light), var
 #scroll-top span{display:inline-block;width:15px;height:15px;border:3px solid #fff;border-left:0;border-bottom:0;transform:rotate(-45deg);transition:0.5s;}
 #scroll-top:hover span{transform: scaleX(-1) rotate(-45deg);}
 
+#dot-menu {position: fixed;top: 45vh;right: 8px;z-index: 1500;}
+.dot-menu-item-link {display: block;width: 16px;height: 16px;margin: 10px 0;border: 2px solid var(--light);background-color: #fff;}
+.dot-menu-item-link.selected {border: 2px solid var(--dark);background-color: var(--light);}
+
+[data-title] {
+    position: relative;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #fff;
+    color: #111;
+    font-size: 16px;
+    position: absolute;
+    padding: 2px;
+    bottom: -23;
+    right: 20px;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border-image: linear-gradient(to right, var(--light), var(--dark)) 1;z-index: 99999;
+    visibility: hidden;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+
 
 @media (min-width: 768px){
     .project-block {display: flex;}

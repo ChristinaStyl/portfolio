@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$(window).scroll(function() {
+		var windowScroll = $(this).scrollTop();
 		if ($(this).scrollTop() > 160) {
 			$('#scroll-top').fadeIn();
 			$('#main').addClass('scrolled');
@@ -7,48 +8,15 @@ $(document).ready(function() {
 			$('#scroll-top').fadeOut();
 			$('#main').removeClass('scrolled');
 		}
+
+		//** dot menu
+		$( ".dot-menu-wrap" ).each(function( index ) {
+			var wrapid = $(this).attr('id');
+			var elemPos = $( this ).position().top;
+			if(windowScroll > elemPos-30){
+				$('.dot-menu-item-link').removeClass('selected');
+				$('#dmi-'+wrapid).addClass('selected');
+			}
+		});
 	});
 });
-
-function openNav() {
-  document.getElementById("mySidebar").style.width = "300px";
-  document.getElementById("mob-main").style.marginLeft = "0";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("mob-main").style.marginLeft= "0";
-}
-
-
-var mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
