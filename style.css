@@ -84,7 +84,7 @@ a.menu-items{color: #fff;display: block;font-size: 18px;line-height: 1.5;}
 a.menu-items:hover{background-image: linear-gradient(to right, var(--light), var(--dark));-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .footer-logo img{width: 200px;display: block;margin:20px auto;}
 
-#scroll-top{position:fixed;bottom:90px;right:10px;display:none;width:50px;height:50px;padding-top:19px;border-radius:100%;border:2px solid #fff;z-index:3000;text-align:center;}
+#scroll-top{position:fixed;bottom:90px;right:8px;display:none;width:50px;height:50px;padding-top:19px;border-radius:100%;border:2px solid #fff;z-index:3000;text-align:center;}
 #scroll-top span{display:inline-block;width:15px;height:15px;border:3px solid #fff;border-left:0;border-bottom:0;transform:rotate(-45deg);transition:0.5s;}
 #scroll-top:hover span{transform: scaleX(-1) rotate(-45deg);}
 
