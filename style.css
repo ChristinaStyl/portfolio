@@ -58,6 +58,7 @@ a:hover{background-image: linear-gradient(to right, var(--light), var(--dark));-
 .services-wrap{background: url('./images/services-bg.jpg') 0 0 no-repeat;background-size: cover;background-position:center;background-color: #021420;}
 .services-box {display: inline-block;width: 100%;border: 2px solid rgba(255, 255, 255, 0.4);padding: 30px 50px;margin: 0 0 40px 0;/*text-align: center;*/color: #fff;line-height: 1.3;background: rgba(255, 255, 255, 0.2);box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);backdrop-filter: blur(15px);transition: 0.3s;}
 .service-title{font-size: 24px;padding: 0 0 10px 0}
+.service-text{text-align: justify;}
 
 .personal-wrap {background-color: var(--grey);}
 .tab {overflow: hidden;border: 1px solid;border-image: linear-gradient(to right, var(--light), var(--dark)) 1;/*max-width: 297.5px;*/margin: auto;}
@@ -83,7 +84,7 @@ a.menu-items{color: #fff;display: block;font-size: 18px;line-height: 1.5;}
 a.menu-items:hover{background-image: linear-gradient(to right, var(--light), var(--dark));-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .footer-logo img{width: 200px;display: block;margin:20px auto;}
 
-#scroll-top{position:fixed;bottom:90px;right:8px;display:none;width:50px;height:50px;padding-top:19px;border-radius:100%;border:2px solid #fff;z-index:3000;text-align:center;}
+#scroll-top{position:fixed;bottom:90px;right:8px;display:none;width:50px;height:50px;padding-top:12px;border-radius:100%;border:2px solid #fff;z-index:3000;text-align:center;}
 #scroll-top span{display:inline-block;width:15px;height:15px;border:3px solid #fff;border-left:0;border-bottom:0;transform:rotate(-45deg);transition:0.5s;}
 #scroll-top:hover span{transform: scaleX(-1) rotate(-45deg);}
 
