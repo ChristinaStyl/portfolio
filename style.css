@@ -26,7 +26,7 @@ p{ text-align: justify;}
 b, strong {font-weight: bold;}
 
 p {padding: 0 0 10px 0;margin: 0;}
-p {-webkit-user-select: none;-webkit-touch-callout: none; -moz-user-select: none;-ms-user-select: none;user-select: none;}
+/* p {-webkit-user-select: none;-webkit-touch-callout: none; -moz-user-select: none;-ms-user-select: none;user-select: none;} */
 ul, ol {margin: 10px 0 10px 30px;}
 hr {background: #f7f7f9;border: none;clear: both;height: 1px;margin:auto;padding: 0;width: 100%;margin: 10px }
 
@@ -62,10 +62,10 @@ a:hover{background-image: linear-gradient(to right, var(--light), var(--dark));-
 
 .personal-wrap {background-color: var(--grey);}
 .tab {overflow: hidden;border: 1px solid;border-image: linear-gradient(to right, var(--light), var(--dark)) 1;/*max-width: 297.5px;*/margin: auto;}
-.tab button {background-color: inherit;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;transition: 0.3s;font-size: 17px;}
+.tab button {background-color: inherit;float: left;border: none;outline: none;cursor: pointer;padding: 14px 10px;transition: 0.3s;font-size: 17px;}
 .tab button:hover {background-color: #3c3c3d;}
 .tab button.active {background-image: linear-gradient(to right, var(--light), var(--dark));text-decoration: none;color: #fff;}
-.tabcontent {display: none;padding: 20px 12px 6px;border: 1px solid #4d4d4d;border-top: none;}
+.tabcontent {display: none;padding: 20px 12px 6px;border: 1px solid #4d4d4d;border-top: none;min-height: 640px;}
 .tabcontent.active{display: block;}
 
 .projects-wrap{background-color: #000}
@@ -74,7 +74,7 @@ a:hover{background-image: linear-gradient(to right, var(--light), var(--dark));-
 .project-img img{width: 100%;margin: 20px 0;  -webkit-filter: grayscale(100%);filter: grayscale(100%);}
 a.project-img:hover img{filter:none}
 a.project-title{display: block;font-size: 24px;}
-.project-text span{display: inline-block;padding: 0px 10px;background: #2f2f2f;margin-right: 5px;}
+.project-text span{display: inline-block;padding: 0px 10px;background: #2f2f2f;margin: 5px 5px 0 0;}
 .project-text p{margin: 30px 0}
 .project-text .button{display: inline-block;}
 
@@ -83,6 +83,8 @@ a.project-title{display: block;font-size: 24px;}
 a.menu-items{color: #fff;display: block;font-size: 18px;line-height: 1.5;}
 a.menu-items:hover{background-image: linear-gradient(to right, var(--light), var(--dark));-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .footer-logo img{width: 200px;display: block;margin:20px auto;}
+.footer-info{text-align: center;display: block;margin: 10px 0;}
+.footer-info img{width: 30px;margin-right: 10px;}
 
 #scroll-top{position:fixed;bottom:90px;right:8px;display:none;width:50px;height:50px;padding-top:12px;border-radius:100%;border:2px solid #fff;z-index:3000;text-align:center;}
 #scroll-top span{display:inline-block;width:15px;height:15px;border:3px solid #fff;border-left:0;border-bottom:0;transform:rotate(-45deg);transition:0.5s;}
@@ -95,18 +97,23 @@ a.menu-items:hover{background-image: linear-gradient(to right, var(--light), var
 
 
 @media (min-width: 768px){
+    .tab button {padding: 14px 16px;}
+    .tabcontent {min-height: 350px;}
     .project-block {display: flex;}
     .project-block.odd{border: 1px;border-top-style: solid;border-right-style: solid;padding: 80px 30px 80px 0;}
     .project-block.even{border: 1px;border-top-style: solid;border-left-style: solid;padding: 80px 0 80px 30px;}
     .project-block.last{border: 1px solid;border-right-style: none;padding: 80px 0 80px 30px;}
     a.project-title{display: block;font-size: 34px;}
-    .footer-menu {text-align: left;}
+    .footer-menu,.footer-info {text-align: left;}
     .footer-logo img{margin:0 auto;}
+
 }
 
 @media (min-width: 992px) {
+    .tabcontent {min-height: 315px;}
 }
 
 
 @media (min-width: 1200px) {
+    .tabcontent {min-height: 290px;}
 }
